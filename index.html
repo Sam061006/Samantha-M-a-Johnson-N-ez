@@ -6,30 +6,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samantha Mía Johnson Núñez</title>
   <style>
-    * {
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #ffc4d6);
+      color: #4a2b36;
       scroll-behavior: smooth;
     }
-    body {
-  background: #fff0f5; /* fondo rosado claro */
-  color: #4b2e2e; /* texto oscuro */
-}
 
-header {
-  background-color: #f472b6; /* rosa fuerte */
-  color: white;
-}
+    header {
+      background-color: #f28db2;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
 
-nav {
-  background-color: #fde2e4;
-}
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: white;
+    }
 
-nav a {
-  color: #be185d;
-}
+    nav {
+      margin-top: 10px;
+    }
 
-h2 {
-  color: #db2777;
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #e55b8c;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
 
+    nav a:hover {
+      background-color: #d13b72;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      color: #d63384;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      color: #e60073;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+      }
     }
   </style>
 </head>
