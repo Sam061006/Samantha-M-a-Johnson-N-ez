@@ -5,48 +5,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samantha Mía Johnson Núñez</title>
-  <style>
-    body { 
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body { 
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #eedeff, #d8b4fe); /* degradado lila claro */
-  color: #4c1d95; /* violeta oscuro para el texto */
+  background: linear-gradient(to right, #eedeff, #d8b4fe);
+  color: #4c1d95;
   scroll-behavior: smooth;
 }
 
 header {
-  background-color: #c084fc; /* encabezado lila medio */
-  padding: 20px;
+  background-color: #c084fc;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  padding: 60px 20px 40px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-header h1 {
+.nombre {
   margin: 0;
-  font-size: 2.5em;
-  color: white;
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+  color: #2e1065;
 }
 
-nav {
+.subtitulo {
   margin-top: 10px;
+  font-size: 1.2em;
+  color: #5b21b6;
 }
 
-nav a {
-  margin: 0 10px;
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: #ede9fe;
+  padding: 15px;
+}
+
+.menu a {
   text-decoration: none;
-  color: white;
   font-weight: bold;
-  background-color: #a855f7; /* botones lila más oscuro */
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+  color: #6b21a8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #d8b4fe;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-nav a:hover {
-  background-color: #9333ea; /* al pasar el mouse */
+.menu a:hover {
+  background-color: #c084fc;
+  transform: scale(1.05);
 }
 
 .container {
@@ -64,12 +75,12 @@ nav a:hover {
 }
 
 .card h2 {
-  color: #9333ea; /* títulos en morado vibrante */
+  color: #9333ea;
   margin-bottom: 15px;
 }
 
 .card a {
-  color: #7e22ce; /* enlaces */
+  color: #7e22ce;
   text-decoration: none;
   font-weight: bold;
 }
@@ -95,26 +106,35 @@ li {
 }
 
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
+  .nombre {
+    font-size: 2em;
   }
 
-  nav a {
-    display: block;
-    margin: 10px auto;
-    width: fit-content;
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin-bottom: 10px;
   }
 }
+</style>
+  
   </style>
 </head>
 <body>
-  <header>Samantha Mía Johnson Núñez</header>
+<header>
+  <h1 class="nombre">Samantha Mía Johnson Núñez</h1>
+  <p class="subtitulo">Esta es mi página personal 💜</p>
+</header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#contacto">Vida académica</a>
-    <a href="#experiencia">Relacionados</a>
-  </nav>
+<nav class="menu">
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#contacto">Vida académica</a>
+  <a href="#experiencia">Relacionados</a>
+</nav>
+
 
   <div class="container">
     <section id="sobre-mi" class="card">
@@ -129,7 +149,7 @@ li {
     <section id="contacto" class="card">
       <h2>Vida Académica</h2>
       <p>
-        Actualmente estoy cursando el tercer semestre de mi carrera. Los cursos que llevo son:  
+        Actualmente estoy cursando el tercer semestre de mi carrera y me encuentro en el quinto superior. Los cursos que llevo son:  
       </p>
       1. Cálculo en una variable, con la docente Maribel Quiroz.
       </p>
